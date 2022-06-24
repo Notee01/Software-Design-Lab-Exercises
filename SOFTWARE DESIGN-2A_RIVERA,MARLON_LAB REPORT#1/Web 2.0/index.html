@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css"/>
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">M</a>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li class="home active"><a href="#home">Home</a></li>
+                    <li class="about"><a href="#about">About</a></li>
+                    <li class="skills"><a href="#skills">Skills</a></li>
+                    <li class="contact"><a href="#contact">Contact</a></li>
+                </ul> 
+                <div class="toggle" onclick="toggle()"></div>   
+            </div>
+        </nav>  
+    </header>
+
+    <!-- HOME -->
+    <section class="Home" id="home">
+        <div class="textBx"data-aos="flip-up">
+            <h2>Hi, I'm<br><span> Marlon Rivera</span></h2>
+            <h3>I'm A Computer Engineer Student</h3>
+            <a href="#" class="btn">Donwload my CV</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="heading" >
+            <h2>About Me</h2>
+        </div>
+        <div class="aboutmeContent">
+            <div class="left">
+                <div class="content" data-aos="fade-up">
+                    <div class="contentBx b1">
+                        <h3>I'm a Computer Engineering Student</h3>
+                        <p>Currently 2nd year with the degree of computer engineering in Pangasinan State University
+                        </p>
+                    </div>
+                    <div class="b1" data-aos="fade-up">
+                        <img src="static/pic2.jpg" class="img">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="card">
+                    <h1>2008-2014</h1>
+                    <div class="contents">            
+                        <h2>01</h2>
+                        <h3>Primary</h3>
+                        <p>•Lananpin Elementary School</p>
+                        <p>•Elementary</p>
+                        <p>•Nancamaliran West, Urdaneta City, Pangasinan</p>                
+                    </div>
+                </div>
+                <div class="card">
+                    <h1>2014-2018</h1>
+                    <div class="contents">
+                        <h2>02</h2>
+                        <h3>Secondary</h3>
+                        <p>•Lananpin National High School</p>
+                        <p>•Junior High School</p>
+                        <p>•Pinmaludpod, Urdaneta City, Pangasinan</p>
+                        <p>•With Honor</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h1>2018-2020</h1>
+                    <div class="contents">
+                        <h2>03</h2>
+                        <h3>Secondary</h3>
+                        <p>•PHINMA Upang College Urdaneta</p>
+                        <p>•Senior High School</p>
+                        <p>•Mc Arthur Highway, Urdaneta City</p>
+                        <p>•With Honor</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h1>2021-</h1>
+                    <div class="contents">      
+                        <h2>03</h2>
+                        <h3>Tertiary</h3>
+                        <p>•Pangasinan State University</p>
+                        <p>•Colllege</p>
+                        <p>•McArthur Highway, Barangay San Vicente, Urdaneta City</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <div class="heading skill">
+            <h2>My Skills</h2>
+            <p>Below is skills I currently have</p>
+        </div>
+        <div class="bigcontainer">
+            <div class="card" data-aos="fade-up-right">
+                <div class="box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>50<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">Html</h2>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up">
+                <div class="box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>30<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">CSS</h2>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up-left">
+                <div class="box">
+                    <div class="percent ">
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>10<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">JS</h2>
+                </div>
+            </div>
+            <div class="containers" data-aos="zoom-out-up">
+                <div class="box" style="--clr:#33789c;">
+                    <div class="contents">
+                        <div class="icon"><ion-icon name="code-slash-outline"></ion-icon></div>
+                        <div class="text">
+                            <h3>Programming Language</h3>
+                            <p>•Python</p>
+                            <p>•HTML</p>
+                            <p>•CSS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" style="--clr:#196977;">
+                    <div class="contents">
+                        <div class="icon"><ion-icon name="film-outline"></ion-icon></div>
+                        <div class="text">
+                            <h3>Editing Software</h3>
+                            <p>•Photoshop</p>
+                            <p>•Filmora</p>
+                            <p>•AutoCAD</p>                          
+                        </div>
+                    </div>
+                </div>
+                <div class="box" style="--clr:#355780;">
+                    <div class="contents">
+                        <div class="icon"><ion-icon name="desktop-outline"></ion-icon></div>
+                        <div class="text">
+                            <h3>Microsoft Office</h3>
+                            <p>•Microsoft Word</p>
+                            <p>•Microsoft Spreadsheet</p>
+                            <p>•Power Point Presentation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Contact" id="contact">
+        <div class="contactContent" data-aos="fade-up">
+            <div class="contactText">
+                <h2>Send Me A Message</h2>
+                <p>For any questions or query. Please send me a message</p>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <div class="inputRow">
+                        <div class="inputBox">
+                            <input type="text" name="" placeholder="Full Name">
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="inputRow">
+                        <div class="inputBox2">
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="inputRow">
+                        <div class="inputBox2">
+                            <input type="submit" name="" value="Send">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="SMlogo">
+                <ul>
+                    <li><a href="https://www.facebook.com/marlon1107/"><img src="Static/logos/facebook.ico"></a></li>
+                    <li><a href="https://www.instagram.com/stripybaby/"><img src="Static/logos/instagram.ico"></a></li>
+                    <li><a href="https://twitter.com/jijkls"><img src="Static/logos/twitter.ico"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bglayer bglayer1" data-aos="zoom-in"></div>
+        <div class="bglayer bglayer2" data-aos="zoom-in"></div>
+        <div class="bglayer bglayer3" data-aos="zoom-in"></div>
+        <div class="bglayer bglayer4" data-aos="zoom-in"></div>
+        <div class="bglayer bglayer5" data-aos="zoom-in"></div>
+        <div class="bglayer bglayer6" data-aos="zoom-in"></div>
+        <div class="bglayer bglayer7" data-aos="zoom-in"></div>
+        <div class="bglayer bglayer8" data-aos="zoom-in"></div>
+        <div class="bglayer bglayer9" data-aos="zoom-in"></div>
+    </section>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+        });
+    </script>
+    <script src="JS.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
